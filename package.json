@@ -1,0 +1,25 @@
+{
+  "name": "hidden-styled",
+  "version": "1.0.0-0",
+  "description": "",
+  "main": "dist/Hide.js",
+  "scripts": {
+    "prepublish": "babel src -d dist"
+  },
+  "keywords": [],
+  "author": "Brent Jackson",
+  "license": "MIT",
+  "dependencies": {
+    "styled-components": "^2.1.0"
+  },
+  "devDependencies": {
+    "ava": "^0.19.1",
+    "babel-cli": "^6.24.1",
+    "babel-core": "^6.25.0",
+    "babel-preset-env": "^1.5.2",
+    "babel-preset-react": "^6.24.1",
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1",
+    "react-test-renderer": "^15.6.1"
+  }
+}
