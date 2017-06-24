@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders 1`] = `
+<div
+  className="sc-bdVaJa bDWFJH"
+/>
+`;
+
+exports[`renders with lg 1`] = `
+<div
+  className="sc-bdVaJa hKJEBu"
+/>
+`;
+
+exports[`renders with md 1`] = `
+<div
+  className="sc-bdVaJa gLCTHw"
+/>
+`;
+
+exports[`renders with sm 1`] = `
+<div
+  className="sc-bdVaJa bEMGDB"
+/>
+`;
+
+exports[`renders with xs 1`] = `
+<div
+  className="sc-bdVaJa kBXXYC"
+/>
+`;
