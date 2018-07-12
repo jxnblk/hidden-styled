@@ -1,28 +1,33 @@
+import React from 'react'
 import styled from 'styled-components'
+import { display } from 'styled-system'
 
-export const breakpoints = {
-  xs: '@media screen and (max-width: 40em)',
-  sm: '@media screen and (min-width: 40em) and (max-width: 52em)',
-  md: '@media screen and (min-width: 52em) and (max-width: 64em)',
-  lg: '@media screen and (min-width: 64em)',
-}
-
-export const hidden = key => props => props[key] ? {
-  [breakpoints[key]]: {
-    display: 'none'
-  }
-} : null
-
-export const xs = hidden('xs')
-export const sm = hidden('sm')
-export const md = hidden('md')
-export const lg = hidden('lg')
-
-const Hide = styled.div([],
+const withHideProps = Component => ({
   xs,
   sm,
   md,
-  lg
-)
+  lg,
+  xl,
+  display,
+  ...props
+}) =>
+  <Component
+    {...props}
+    display={display || [
+      xs,
+      sm,
+      md,
+      lg,
+      xl
+    ].map(n => n ? 'none' : 'block')}
+  />
+
+const Hide = styled(
+  withHideProps(
+    styled(({ display, ...props }) =>
+      <div {...props} />
+    )([], display)
+  )
+)([])
 
 export default Hide

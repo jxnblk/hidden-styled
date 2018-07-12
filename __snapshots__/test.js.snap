@@ -1,31 +1,37 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`breakpoints can be configured with theme 1`] = `
+<div
+  className="sc-bwzfXH uTxCW sc-bdVaJa lkmfnQ"
+/>
+`;
+
 exports[`renders 1`] = `
 <div
-  className="sc-bdVaJa bDWFJH"
+  className="sc-bwzfXH uTxCW sc-bdVaJa iQKmFe"
 />
 `;
 
 exports[`renders with lg 1`] = `
 <div
-  className="sc-bdVaJa hKJEBu"
+  className="sc-bwzfXH uTxCW sc-bdVaJa kHiLOl"
 />
 `;
 
 exports[`renders with md 1`] = `
 <div
-  className="sc-bdVaJa gLCTHw"
+  className="sc-bwzfXH uTxCW sc-bdVaJa beuNRA"
 />
 `;
 
 exports[`renders with sm 1`] = `
 <div
-  className="sc-bdVaJa bEMGDB"
+  className="sc-bwzfXH uTxCW sc-bdVaJa brqKIn"
 />
 `;
 
 exports[`renders with xs 1`] = `
 <div
-  className="sc-bdVaJa kBXXYC"
+  className="sc-bwzfXH uTxCW sc-bdVaJa iQKmFe"
 />
 `;
